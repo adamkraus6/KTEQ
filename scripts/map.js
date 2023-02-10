@@ -1,6 +1,5 @@
 $(document).ready(function () {
-	document.getElementById("googleMap").innerHTML =
-		'<script src="http://maps.googleapis.com/maps/api/js"></script>';
+	document.getElementById("googleMap").innerHTML = '<script src="http://maps.googleapis.com/maps/api/js"></script>';
 
 	var myCenter = new google.maps.LatLng(44.088138, -103.249492);
 	var surbeck = new google.maps.LatLng(44.075854, -103.208377);
@@ -14,10 +13,7 @@ $(document).ready(function () {
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 		};
 
-		var map = new google.maps.Map(
-			document.getElementById("googleMap"),
-			mapProp
-		);
+		var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
 		var marker = new google.maps.Marker({
 			position: myCenter,
